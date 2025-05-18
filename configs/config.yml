@@ -1,0 +1,22 @@
+# Dataset. Set this according to your dataset configuration,
+# e.g. data/snack_dataset.hf/config.yaml
+width: 160
+height: 160
+path: "snack_dataset.hf" # path containing the split under data/
+
+# Model
+patch_size: 16
+num_classes: 20
+num_heads: 4
+num_encoder_blocks: 8
+dim_emb: 768
+
+# Training
+batch_size: 32
+learning_rate: 0.0001
+splits:
+- 'train'
+- 'validation'
+- 'test'
+num_epochs: 50
+output_name: my_weights  # stored in checkpoints/

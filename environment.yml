@@ -1,0 +1,20 @@
+name: vitax
+channels:
+  - defaults
+  - conda-forge
+  - nvidia 
+dependencies:
+  - python>=3.11
+  - datasets
+  - pyyaml
+  - pillow
+  - tqdm
+  - einops
+  - pip
+  - pip:
+    - jax[cuda]
+    - jaxlib
+    - flax[all]
+    - optax
+    - jaxtyping
+    - -e .

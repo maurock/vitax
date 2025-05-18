@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vitax"
+version = "0.1.0"
+description = "Vision Transformer implementation"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "Mauro Comi"}
+]
+dependencies = [
+    "jax",
+    "jaxlib",
+    "flax",
+    "optax",
+    "datasets",
+    "PyYAML",
+    "Pillow",
+    "tqdm",
+    "jaxtyping",
+    "einops",
+    "ml_collections"
+]
